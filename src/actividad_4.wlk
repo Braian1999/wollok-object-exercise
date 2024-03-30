@@ -12,13 +12,16 @@
 // Para saber si n es múltiplo de 20 hacer: n % 20 == 0. Probarlo en el REPL.
 object pepita {
 	var energia = 0
-	method energia(){
-		return energia
-	}
+	var estaDebil = energia < 50
+	var estaFeliz = 500 < energia < 1000
+
 	method comer(gramos){
 		energia = energia + gramos * 4
 	}
 	method volar(kilometrosAVolar){
 		energia = energia - kilometrosAVolar - 10 
+	}
+	method energia(){
+		return energia
 	}
 }
