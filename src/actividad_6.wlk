@@ -7,12 +7,12 @@ object tecladoEspingarda {
 		numeroIngresado = ""
 	}
 	method numeroIngresado(){
-		var primerosNumeros = numeroIngresado.take(2)
-		return 5 == 5
+		return numeroIngresado
 	}
 	method esNumeroValido(){
+		var primerosNumeros = numeroIngresado.take(2)
 		var cantidadDeNumeros = numeroIngresado.size()
-			return (cantidadDeNumeros == 5) or (cantidadDeNumeros == 7 and numeroIngresado.take(2) == 15)
+			return (cantidadDeNumeros == 5) or (cantidadDeNumeros == 7 and primerosNumeros == 15)
 	}
 }
 
