@@ -1,13 +1,12 @@
 object calculadora {
 	var  valorActual = 0
- = 0
 	method cargar(numero){
 		valorActual = numero
 	}
 	method sumar(numero){
 		valorActual = valorActual + numero
 	}
-	method sumar(numero){
+	method restar(numero){
 		valorActual = valorActual - numero
 	}
 	method multiplicar(numero){
